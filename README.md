@@ -14,8 +14,8 @@ onClick => { alert('click)>}
 アロー関数のほうが早い
 Reactはstateを使ってっコンポーネントに学習させる
   
-#ruby　チュートリアル
-# ruby
+#　ruby　チュートリアル
+
 変数名は何の値が入れられているかわかりやすいやつにする
 変数のいい例
 name 
@@ -30,11 +30,11 @@ number = nuber + 3
 number+=3で省略できる
 number * =3
 
-##　変数展開
+## 変数展開
 変数を文字列に組み込むときは変数展開を使おう
 age = １９
 puts  ”#{age｝歳です”
-##if文　
+## if文　
 if 条件
 実行
 ends
