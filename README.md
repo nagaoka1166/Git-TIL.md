@@ -39,6 +39,38 @@ if 条件
 実行
 ends
 
+##比較演算子
+a==b　aとｂは等しい
+a!=b    aとｂは等しくない
+
+## elseを使ったif文の型
+if 条件
+　　実行
+else
+　　実行
+
+end
+
+## rubyでのelse ifの書き方
+elsif
+
+## 条件の組み合わせ
+「かつ」
+  a>10 && b  <3
+
+「または」
+
+  a>10 || b  <3
+
+## ruby 配列　
+names ＝["nagaoka", shirakwa" , "tanaka"]
+puts names
+   で名前三つ出力
+
+インデックス番号は0から始まる
+また変数展開と配列の数字も組み合わせられる。
+puts ’こんにちは#{name[1]’
+
 
 
 
