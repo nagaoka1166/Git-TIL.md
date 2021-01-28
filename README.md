@@ -71,6 +71,57 @@ puts names
 また変数展開と配列の数字も組み合わせられる。
 puts ’こんにちは#{name[1]’
 
+## rubyチュートリアル
+3**2 
+**は二乗という意味。
+Math.sqrt(9)
+は平方根を研鑽してくれる。
+
+defで関数を定義する
+def  hi
+puts "Hello World"
+end
+で”Hello World"が出力される。
+### 特定の人の名前を入れたいとき
+def hi(name)
+と引数を置いて
+puts "Hello #name}!"
+end
+
+hi("tarou")
+で　Hello tatouと出る
+
+class Greeter
+
+def initialize   (name = world)
+@name＝name 
+end
+def say_hi
+  puts "Hello #{name}!"
+end
+def say_bye
+puts "bye #{name}!"
+
+nameがなかった場合hello worldになる。
+
+greeterオブジェクトを作る
+greeter = Gteeter.new(pat）で代入
+
+## progate
+配列.each do 変数
+実行
+end
+
+変数ができる範囲をスコープと呼ぶ
+
+変数の出力
+put 変数
+## ハッシュ
+ハッシュとは配列とは違い、違う値を箱に入れること
+変数　＝｛　キー　＝＞値、キー　＝＞値｝
+puts 変数
+
+
 
 
 
