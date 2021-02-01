@@ -156,5 +156,40 @@ string class
 ## オブジェクト
 "hello
 
+rubyonrails 
+rubyの表示は
+controller 
+view 
+rooting
+からできている。
+rubyのviewまでの流れ
+url→rooting→controller→view
+
+rootingを変えるとurlも変えることができる。
+get => home/top を get => top
+するとURLも変わる。
+stylesheet内のcssを変えると勝手にviewも変わる
+
+puts "great" if score >80
+といった書き方もできる
+
+!=は等しくない。
+
+## caseの条件分岐
+case signal
+
+when "red"
+puts "warning"
+
+when "yellow"
+puts "caution"
+
+when "blue"
+puts "go!"
+
+else 
+puts "   wrong    signal
+
+
 
 
