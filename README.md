@@ -225,4 +225,85 @@ end　内でview用の表示ができる。
 マイグレーションファイルはデータの変更を指示するファイル？
    rails   g model  Post   カラム名:text
 
+rails db: migrate
+でデータを反映させる。
 
+Appricartionmodeが反映されたクラスをモデルという
+
+postでインスタンスを作成するにはnewメソッドが必要
+post.new(content:,,,)
+インスタンスを保存するにはsaveメソッドが使える。
+これはpostクラスにapplicationRecordを継承したからである。
+
+post.firstでテーブルの最初のデーターをとりだることができる。
+post1 =Post.fitst
+post.content (データの内容を表示させる）
+Post.all ですべての値取得
+Post.all[0].content
+1番目の内容を表示させる。
+railsでaタグを書く時は<
+<%= link_to(第一引数（表示させる文字）、第二引数（url)) %>
+
+loop do  
+p i
+i += 1
+end
+でエンドレスに＋１される。
+if文で
+breakやnextを書くと、特定の数字で止まったり、スキップしたりする。
+
+def  syaHi 
+p "hi"
+end
+メソッド内で定義した変数はメソッド外では呼び出せない。
+ def sayhi( name = "nagaoka" )
+p "hi"　＃引数が与えられなかったらデフォルトの長岡がでる　
+end
+
+class User  #クラスの値の最初は必ず大文字
+
+def sayhi
+p 　"hi"
+end
+
+end
+
+tom =User.new #これで変数にメソッドを使えるようにできる。
+tom.sayhi
+
+class User  #クラスの値の最初は必ず大文字
+
+def initialize(name)
+@name = name
+end
+
+def sayhi(name
+
+puts 　"hi" #{@name}
+end
+
+end
+tom =User.new 
+tom.sayhi("nagaoka")
+
+インスタンスの変数をかえたい、、
+その場合はattr_acsesserを使う
+name=>(値）　値をセットするためのコトをgetter
+name               値に入りこむことをgetterという
+
+クラスメソッド
+ def self.info
+puts 
+end
+User.info #呼び出し
+ 
+クラス変数
+@@でかく
+定数はすべて大文字が推奨
+
+class 子クラス　＜　親クラス　#敬称の書き方。
+
+end
+
+オーバーライド
+親クラスのを書き換えことができる。
