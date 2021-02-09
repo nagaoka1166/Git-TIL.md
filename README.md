@@ -309,3 +309,18 @@ end
 
 オーバーライド
 親クラスのを書き換えことができる。
+
+##2/09 　greeting
+メソッドとは複数の処理をまとめること
+def   greeting
+  puts こんちわ
+  puts こんばんわ
+end
+defとendの間の処理はインデント半角2文字分
+greeting
+
+因数は二つ入れれる。
+def shoping(item,price)
+
+
+
