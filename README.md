@@ -319,7 +319,7 @@ end
 defとendの間の処理はインデント半角2文字分
 greeting
 
-因数は二つ入れれる。
+引数は二つ入れれる。
 def shoping(item,price)
 
 
