@@ -322,5 +322,74 @@ greeting
 引数は二つ入れれる。
 def shoping(item,price)
 
+## 2/11 ruby
+## レシーバー
+レシーバーとは「コンマの左側」をさす。
+privateはレシーバーを指定できない。
+self.privateはだめ
+User.new.privateもダメ
+
+module
+　　VERSION:: 1.1
+end
+
+クラスメソッドの呼び出し
+module mod
+　def self.sayhello
+           puts "hello
+   end
+end
+mod.sayhello
+ のようにselfはいらない。
+
+## moduleのmix in
+moduleで定義したインスタンスクラスは他のくらすで使える。
+module debug
+     def info
+       puts "  #{self.class} debug  "
+     end
+end
+
+class monster 
+     include  debug
+end
+
+clas player
+     include  debug
+end
+ includeでmoduleのmix inが使える。つまりmoduleのインスタンスメソッドが使える
+
+to.iメソッドは文字列を整数に変える。
+
+## 例外エラー
+例外が発生しそうな処理に
+beginとendで囲い
+例外が発生した時の処理を
+rescueで書いていく
+
+def add(a,b)
+  return a + b
+end
+sum = add(2,3)
+puts sum
+
+shipping_free?のようなメソッドに？があるのは
+returnで条件を書くと勝手に真偽判定をしてくれる。
+
+#クラスとインスタンス
+クラスが設計図
+インスタンスがもの
+
+attr_accesor 
+インスタンス変数はいくつでも作れる
+
+変数　＝クラス名.newでインスタンス生成
+インスタンスを作る手順
+クラス用意→インスタンスの生成→値を入れる
+
+くらすの中で定義したメソッドを呼び出すには
+インスタンス名.メソッド
+
+インスタンスメソッドの中ではself.変数名とすることでインスタン変数を扱うことができる。
 
 
